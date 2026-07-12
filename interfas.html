@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Panel de Estudiantes - Fundación Álvaro Lara</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body class="pagina-panel">
+
+    <header class="header-panel">
+        <div class="brand-panel">
+            <div class="brand-mark">
+                <img src="imagenes/logo.png" alt="Fundación Álvaro Lara">
+            </div>
+            <div>
+                <h1>Panel de aprendizaje</h1>
+                <p>Tu espacio para practicar, medir y avanzar</p>
+            </div>
+        </div>
+        <a href="Index.html" class="btn-nav">Inicio</a>
+    </header>
+
+    <main class="panel-main">
+        <section class="panel-hero">
+            <div>
+                <span>Bienvenido a tu ruta</span>
+                <h2>Prepárate con simulacros, retos y seguimiento académico.</h2>
+                <p>Accede a recursos de estudio, ejercicios, resultados y una experiencia más interactiva para tu formación.</p>
+</div>
+            <div class="panel-hero-stats">
+                <article class="panel-card destaque">
+                    <h3 id="usuario-nombre">Hola, estudiante 👋</h3>
+                    <p>Usuario desde: <strong id="usuario-fecha">--</strong></p>
+                    <p>Promedio: <strong id="usuario-promedio">0%</strong></p>
+                    <p>Simulacros realizados: <strong id="usuario-simulacros">0</strong></p>
+                    <p>Mejor puntaje: <strong id="usuario-mejor">0%</strong></p>
+                    <p>Retos completados: <strong id="usuario-retos">0</strong></p>
+                    <button id="btn-cerrar-sesion-panel" class="btn-secundario small">Cerrar sesión</button>
+                </article>
+            </div>
+            <div class="panel-quickbar">
+                <a href="quiz.html?materia=matematicas">Matemáticas</a>
+                <a href="quiz.html?materia=lectura">Lectura</a>
+                <a href="quiz.html?materia=ciencias">Ciencias</a>
+                <a href="quiz.html?materia=ingles">Inglés</a>
+                <a href="quiz.html?materia=sociales">Sociales</a>
+            </div>
+        </section>
+
+        <section class="panel-layout">
+            <aside class="panel-sidebar">
+                <h3>Explorar</h3>
+                <a href="Index.html">Inicio</a>
+                <a href="#zona-test">Simulacros</a>
+                <a href="recursos.html">Recursos</a>
+                <a href="Index.html#contacto">Contactar</a>
+            </aside>
+
+            <div class="panel-content">
+                <section class="panel-grid">
+                    <article class="panel-card">
+                        <div class="card-icon">🧪</div>
+                        <h3>Simulacros</h3>
+                        <p>Prueba tus conocimientos con ejercicios tipo ICFES y respuestas guiadas.</p>
+                        <a href="#zona-test" class="mini-btn">Ver simulacros</a>
+                    </article>
+
+                    <article class="panel-card">
+                        <div class="card-icon">📘</div>
+                        <h3>Recursos</h3>
+                        <div class="recursos-listas">
+                            <a href="recursos.html" class="recurso-item">
+                                 📥 Descargar material PDF
+                            </a>
+                            <a href="trucos.html" class="recurso-item">
+                                💡 Trucos para el ICFES
+                            </a>
+                        </div>
+                    </article>
+
+                    <article class="panel-card">
+                        <div class="card-icon">🎯</div>
+                        <h3>Retos diarios</h3>
+                        <p>Completa actividades diarias para mantener tu preparación activa.</p>
+                        <a href="retos.html" class="mini-btn">Ver retos</a>
+                    </article>
+                </section>
+
+                <section id="zona-test" class="panel-section">
+                    <div class="panel-card wide">
+                        <h3>Zona de test</h3>
+                        <p>Escoge una materia y empieza un simulacro tipo ICFES con 20 preguntas y retroalimentación al finalizar.</p>
+                        <div class="subject-grid">
+                            <a class="subject-card" href="quiz.html?materia=ingles">
+                                 <div class="card-icon">🇬🇧</div>
+                                 <h4>Inglés</h4>
+                                 <p>Comprensión lectora, vocabulario y gramática.</p>
+                                
+                            </a>
+                            <a class="subject-card" href="quiz.html?materia=matematicas">
+                                <div class="card-icon">➗</div>
+                                <h4>Matemáticas</h4>
+                                <p>Razonamiento numérico, álgebra y geometría.</p>
+                            </a>
+                            <a class="subject-card" href="quiz.html?materia=lectura">
+                                <div class="card-icon">📖</div>
+                                <h4>Lectura crítica</h4>
+                                <p>Comprensión, inferencia y análisis de textos.</p>
+                            </a>
+                            <a class="subject-card" href="quiz.html?materia=ciencias">
+                                <div class="card-icon">🧪</div>
+                                <h4>Ciencias</h4>
+                                <p>Biología, física, química y entorno natural.</p>
+                            </a>
+                            <a class="subject-card" href="quiz.html?materia=sociales">
+                                <div class="card-icon">🌎</div>
+                                <h4>Sociales y Ciudadanas</h4>
+                                <p>Historia, geografía, democracia y ciudadanía.</p>
+                            </a>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>

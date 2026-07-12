@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Zona - Fundación Álvaro Lara</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body class="pagina-navegacion">
+
+    <header class="header-navegacion">
+        <div class="brand">
+            <div class="brand-mark">
+                <img src="imagenes/logo.png" alt="Fundación Álvaro Lara">
+            </div>
+            <div>
+                <h1>Zona de estudiantes</h1>
+                <p>Tu espacio de aprendizaje y seguimiento</p>
+            </div>
+        </div>
+
+        <a href="Index.html" class="btn-nav">Volver al inicio</a>
+    </header>
+
+    <main class="dashboard-shell">
+
+        <section class="hero-panel">
+            <div class="hero-copy">
+                <span>Bienvenido a tu portal</span>
+                <h2>Organiza tu proceso de preparación con una experiencia más clara y motivadora.</h2>
+                <p>Registra tu usuario y accede a simulacros, resultados, recursos de estudio y contacto directo con la fundación.</p>
+            </div>
+
+            <div class="registro-card">
+                <h3>Crear una cuenta</h3>
+                <form id="form-registro" class="form-registro">
+                    <div class="input-group">
+                        <input type="text" name="nombre" placeholder="Nombre completo">
+                        <p class="field-error" data-error-for="nombre"></p>
+                    </div>
+                    <div class="input-group">
+                        <input type="email" name="email" placeholder="Correo electrónico">
+                        <p class="field-error" data-error-for="email"></p>
+                    </div>
+                    <div class="input-group">
+                        <input type="tel" name="telefono" placeholder="Teléfono">
+                        <p class="field-error" data-error-for="telefono"></p>
+                    </div>
+                    <div class="input-group">
+                        <input type="text" name="municipio" placeholder="Municipio">
+                        <p class="field-error" data-error-for="municipio"></p>
+                    </div>
+                    <div class="input-group">
+                        <input type="password" name="password" placeholder="Crea una contraseña">
+                        <p class="field-error" data-error-for="password"></p>
+                    </div>
+                    <small class="password-help">Debe tener mínimo 8 caracteres.</small>
+                    <button type="submit">Crear usuario</button>
+                </form>
+                <p id="mensaje-registro" class="form-message"></p>
+                <hr class="separador-login">
+                <h3>Ya tengo una cuenta</h3>
+                <form id="form-login" class="form-registro">
+                    <div class="input-group">
+                        <input type="email" name="email" placeholder="Correo electrónico" required>
+                        <p class="field-error" data-error-for="login-email"></p>
+                    </div>
+                    <div class="input-group">
+                        <input type="password" name="password" placeholder="Contraseña" required>
+                        <p class="field-error" data-error-for="login-password"></p>
+                    </div>
+                    <button type="submit">Iniciar sesión</button>
+                </form>
+                <p id="mensaje-login" class="form-message"></p>
+            </div>
+        </section>
+
+        <section id="panel-usuario" class="panel-usuario oculto">
+            <div class="panel-head">
+                <div>
+                    <h3 id="bienvenida">Hola, estudiante</h3>
+                    <p>Tu ruta de preparación está lista para comenzar.</p>
+                </div>
+                <button id="btn-cerrar-sesion" class="btn-secundario small">Cerrar sesión</button>
+            </div>
+
+            <nav class="panel-nav">
+                <a href="#simulacros">Simulacros</a>
+                <a href="#puntajes">Puntajes</a>
+                <a href="#resultados">Resultados</a>
+                <a href="#contactos">Contactos</a>
+                <a href="#test">Zona de test</a>
+            </nav>
+
+            <div class="dashboard-grid">
+                <article id="simulacros" class="dashboard-card">
+                    <div class="card-icon">📝</div>
+                    <h4>Simulacros</h4>
+                    <ul>
+                        <li>Simulacro 1 · Matemáticas</li>
+                        <li>Simulacro 2 · Lectura crítica</li>
+                        <li>Simulacro 3 · Ciencias</li>
+                    </ul>
+                </article>
+
+                <article id="puntajes" class="dashboard-card">
+                    <div class="card-icon">📊</div>
+                    <h4>Puntajes</h4>
+                    <div class="barra"><span style="width: 82%"></span></div>
+                    <div class="barra"><span style="width: 76%"></span></div>
+                    <div class="barra"><span style="width: 88%"></span></div>
+                </article>
+
+                <article id="resultados" class="dashboard-card">
+                    <div class="card-icon">🏆</div>
+                    <h4>Resultados</h4>
+                    <p>Progreso académico: <strong>+18%</strong></p>
+                    <p>Mejora en simulacros: <strong>4/5</strong></p>
+                    <p>Rango de preparación: <strong>Avanzado</strong></p>
+                </article>
+
+                <article id="contactos" class="dashboard-card">
+                    <div class="card-icon">📞</div>
+                    <h4>Números de contacto</h4>
+                    <p>WhatsApp: +57 321 937 1513</p>
+                    <p>Correo: contacto@fundacionalvarolara.com</p>
+                    <p>Ubicación: Tierralta, Córdoba</p>
+                </article>
+
+                <article id="test" class="dashboard-card wide">
+                    <div class="card-icon">🧠</div>
+                    <h4>Zona de test</h4>
+                    <p>Prueba rápida de diagnóstico para medir tu nivel actual.</p>
+                    <div class="test-box">
+                        <span>Pregunta 1</span>
+                        <p>¿Qué tema te gustaría reforzar hoy?</p>
+                        <div class="test-tags">
+                            <span>Matemáticas</span>
+                            <span>Lectura</span>
+                            <span>Ciencias</span>
+                            <span>Inglés</span>
+                            <span>sociales</span>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>

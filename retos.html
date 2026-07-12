@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Reto Diario</title>
+
+<link rel="stylesheet" href="style.css">
+
+</head>
+
+<body class="quiz-page">
+
+<div class="quiz-wrapper">
+
+<h1>🔥 Reto Diario</h1>
+
+<p>
+Demuestra cuánto sabes respondiendo
+10 preguntas aleatorias.
+</p>
+
+<div id="quiz-container">
+
+<h2 id="question"></h2>
+
+<div id="answers"></div>
+
+<button id="nextBtn">
+Siguiente
+</button>
+
+</div>
+
+<div id="resultado" style="display:none;">
+
+<h2>Resultado</h2>
+
+<h3 id="score"></h3>
+
+<div id="review"></div>
+
+<div class="reto-actions">
+    <button type="button" onclick="location.reload()">Volver a jugar</button>
+    <a href="interfas.html" class="btn-principal">Volver al panel</a>
+</div>
+
+</div>
+
+</div>
+
+<script src="retos-utils.js"></script>
+
+<script src="retos.js"></script>
+
+</body>
+
+</html>
