@@ -2594,3 +2594,141 @@ padding:15px;
     }
 }
 .reto-actions{display:flex;flex-wrap:wrap;gap:12px;margin-top:25px}.reto-actions button,.reto-actions .btn-principal{flex:1;min-width:180px;margin-top:0}.reto-actions .btn-principal{display:flex;align-items:center;justify-content:center}
+
+/* =========================
+   RESPONSIVE FORMULARIO MÓVIL
+========================= */
+
+@media (max-width: 768px){
+
+    body.pagina-navegacion{
+        overflow-x:hidden;
+    }
+
+    .header-navegacion{
+        position:relative;
+        padding:15px 5%;
+        flex-direction:column;
+        align-items:stretch;
+        gap:15px;
+    }
+
+    .brand{
+        width:100%;
+        align-items:center;
+    }
+
+    .brand-mark{
+        width:50px;
+        height:50px;
+        flex-shrink:0;
+    }
+
+    .brand h1{
+        font-size:18px;
+    }
+
+    .brand p{
+        font-size:12px;
+    }
+
+    .header-navegacion .btn-nav{
+        width:100%;
+        text-align:center;
+    }
+
+    .dashboard-shell{
+        padding:25px 15px 60px;
+        width:100%;
+    }
+
+    .hero-panel{
+        display:grid;
+        grid-template-columns:1fr;
+        gap:25px;
+        width:100%;
+    }
+
+    .hero-copy{
+        width:100%;
+        text-align:center;
+    }
+
+    .hero-copy h2{
+        font-size:26px;
+        line-height:1.3;
+    }
+
+    .hero-copy p{
+        font-size:15px;
+        line-height:1.6;
+    }
+
+    .registro-card{
+        width:100%;
+        max-width:100%;
+        padding:20px 15px;
+        border-radius:18px;
+        overflow:visible;
+    }
+
+    .form-registro{
+        width:100%;
+    }
+
+    .input-group{
+        width:100%;
+    }
+
+    .form-registro input{
+        width:100%;
+        max-width:100%;
+        min-height:48px;
+        padding:13px 14px;
+        font-size:16px;
+    }
+
+    .form-registro button{
+        width:100%;
+        min-height:48px;
+        font-size:16px;
+    }
+
+    .field-error{
+        min-height:0;
+    }
+
+    .dashboard-grid{
+        grid-template-columns:1fr;
+    }
+
+    .dashboard-card.wide{
+        grid-column:auto;
+    }
+
+    .panel-head{
+        flex-direction:column;
+        align-items:stretch;
+    }
+
+    .panel-nav{
+        justify-content:center;
+    }
+}
+
+@media (max-width: 400px){
+
+    .dashboard-shell{
+        padding-left:10px;
+        padding-right:10px;
+    }
+
+    .registro-card{
+        padding:18px 12px;
+    }
+
+    .hero-copy h2{
+        font-size:22px;
+    }
+
+}
