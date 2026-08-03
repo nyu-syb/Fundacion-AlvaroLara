@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://nyu-syb.github.io/Fundacion-AlvaroLara/sitemap.xml
